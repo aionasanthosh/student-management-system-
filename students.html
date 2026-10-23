@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>StudentHub | Student directory</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div id="siteHeader"></div><main class="container page-content">
+<div class="page-intro"><p class="eyebrow">DIRECTORY</p><h1>Student directory</h1><p class="muted">Browse the student list or add a sample student to this browser.</p></div>
+<div class="toolbar"><input id="studentSearch" type="search" placeholder="Search by name, course, or ID…" aria-label="Search students"><select id="courseFilter" aria-label="Filter by course"><option value="">All courses</option><option>CSE</option><option>ECE</option><option>EEE</option><option>ME</option><option>BCA</option></select></div>
+<div id="studentGrid" class="student-grid"></div>
+<section class="add-panel"><div><p class="eyebrow">QUICK ACTION</p><h2>Add a student</h2><p class="muted">Saved only in this browser using local storage.</p></div>
+<form id="addStudentForm" class="add-form"><input id="newName" placeholder="Student name" required><input id="newCourse" placeholder="Course (e.g. CSE)" required><input id="newYear" type="number" min="1" max="6" value="1" required><button class="btn" type="submit">+ Add student</button></form></section>
+</main><div id="siteFooter"></div><script src="js/app.js"></script></body></html>
